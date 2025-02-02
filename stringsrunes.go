@@ -10,21 +10,21 @@ func main(){
 
 	fmt.Println("Len:",len(s))
 	for i := 0;i<len(s);i++{
-		fmt.Println("%x ",s[i])
+		fmt.Printf("%x ",s[i])
 	}
 	fmt.Println()
 
 	fmt.Println("Rune count:",utf8.RuneCountInString(s))
 
 	for idx,runeValue := range s{
-		fmt.Println("%#U starts at %d\n",runeValue,idx)
+		fmt.Printf("%#U starts at %d\n",runeValue,idx)
 	}
 
 	fmt.Println("\nUsing DecodeRuneInString")
 
 	for i,w := 0,0;i<len(s);i += w{
 		runeValue,width := utf8.DecodeRuneInString(s[i:])
-		fmt.Println("%#U starts at %d\n",runeValue,i)
+		fmt.Printf("%#U starts at %d\n",runeValue,i)
 		w = width
 		fmt.Println("width:",w)
 
