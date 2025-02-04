@@ -48,3 +48,11 @@ func find(nums []int,target int)(index int){
 		}
 	}
 }
+
+func extend(nums[] int,enlarge int)[]int{
+	res := make([]int,len(nums)+enlarge)
+	for i,num: range nums{
+		res[i] = num
+	}
+	return res
+}
