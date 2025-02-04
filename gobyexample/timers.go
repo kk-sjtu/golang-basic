@@ -18,6 +18,7 @@ func main(){
 		<-timer2.C
 		fmt.Println("Timer 2 fired")
 	}()
+	//time.Sleep(1600 * time.Millisecond)
 	stop2 := timer2.Stop()
 	if stop2{
 		fmt.Println("timer 2 stopped")
