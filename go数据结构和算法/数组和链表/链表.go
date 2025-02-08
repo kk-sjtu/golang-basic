@@ -1,3 +1,4 @@
+package main
 
 type ListNode struct{
 	val int
