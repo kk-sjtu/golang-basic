@@ -52,4 +52,7 @@ func main() {
 
 	nums3 := []int{1, 0, 1, 2}
 	fmt.Println(longestConsecutive(nums3)) // 输出: 3
+
+	nums4 := []int{1, 2, 0, 1}
+	fmt.Println(longestConsecutive(nums4)) // 输出: 3
 }
